@@ -37,7 +37,7 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/team")
 //后端解决跨域问题
-@CrossOrigin(origins = {"http://localhost:5173"},allowCredentials ="true")
+//@CrossOrigin(origins = {"http://localhost:5173"},allowCredentials ="true")
 @Slf4j //打印日志
 public class TeamController {
     @Resource

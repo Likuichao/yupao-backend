@@ -34,7 +34,7 @@ import static com.lkc.yupao.constant.UserConstant.USER_LOGIN_STATE;
 @RestController
 @RequestMapping("/user")
 //后端解决跨域问题
-@CrossOrigin(origins = {"http://localhost:5173"},allowCredentials ="true")
+//@CrossOrigin(origins = {"http://localhost:5173"},allowCredentials ="true")
 @Slf4j //打印日志
 public class UserController {
     @Resource

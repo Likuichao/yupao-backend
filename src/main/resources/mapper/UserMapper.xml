@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.lkc.usercenter.mapper.UserMapper">
+<mapper namespace="com.lkc.yupao.mapper.UserMapper">
 
-    <resultMap id="BaseResultMap" type="com.lkc.usercenter.model.User">
+    <resultMap id="BaseResultMap" type="com.lkc.yupao.model.domain.User">
             <id property="id" column="id" jdbcType="BIGINT"/>
             <result property="username" column="username" jdbcType="VARCHAR"/>
             <result property="userAccount" column="userAccount" jdbcType="VARCHAR"/>
@@ -19,6 +19,7 @@
             <result property="idDelete" column="idDelete" jdbcType="TINYINT"/>
             <result property="userRole" column="userRole" jdbcType="INTEGER"/>
             <result property="planetCode" column="planetCode" jdbcType="VARCHAR"/>
+            <result property="tags" column="tags" jdbcType="VARCHAR"/>
     </resultMap>
 
     <sql id="Base_Column_List">
@@ -26,6 +27,6 @@
         avatarUrl,gender,userPassword,
         email,userStatus,phone,
         createTime,updateTime,idDelete,
-        userRole,planetCode
+        userRole,planetCode,tags
     </sql>
 </mapper>

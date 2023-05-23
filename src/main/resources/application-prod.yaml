@@ -1,11 +1,11 @@
 spring:
   application:
-    name: user-center
+    name: yupao-backend
   datasource:
-    url: 'jdbc:mysql://43.137.34.178:3306/db'
+    url: jdbc:mysql://localhost:3306/lkc
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: Wang158658Wang
+    password: lkc
   session:
     timeout: 86400
 server:

@@ -16,7 +16,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2WebMvc;
  */
 @Configuration
 @EnableSwagger2WebMvc
-@Profile({"dev","test"})//限定配置只在部分环境开启；如果在dev运行代码，则swagger在"dev","test"下可用
+@Profile({"dev","test","prod"})//限定配置只在部分环境开启；如果在dev运行代码，则swagger在"dev","test"下可用
 public class SwaggerConfig {
 
     @Bean
